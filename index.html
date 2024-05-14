@@ -38,11 +38,20 @@
 						<ul class="nav navbar-nav menu_nav justify-content-end">
 							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								<a href="#" id="warning" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
+								 <script type="text/javascript">
+								 	function warning(){
+								 		alert("Sorry this area is still unavailable, I'm working to be available");
+								 	};
+								 	document.getElementById("warning").onclick = function(){
+								 		warning();
+								 	};
+								 </script>
+								<!-- this area beeing developed	<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
 								</ul>
+								-->	
 							</li>
 						</ul>
 					</div>
